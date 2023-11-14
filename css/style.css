@@ -1,0 +1,67 @@
+:root {
+    /* Neutral Colors */
+    --white: hsl(0, 0%, 100%);
+    --dark-desaturatedblue: hsl(236, 21%, 26%);
+    --very-dark-blue: hsl(235, 16%, 14%);
+    --very-dark-black-blue: hsl(234, 17%, 12%);
+
+    /* Primary Colors */
+    --grayish-blue: hsl(237, 18%, 59%);
+    --red-amaranth: hsl(345, 95%, 68%);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Red Hat Text', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-card {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.1) 50%, cyan 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 140px;
+    position: relative;
+    z-index: 1;
+}
+.bottom-card {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 50%, red 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 140px;
+    position: absolute;
+    top: 297px;
+}
